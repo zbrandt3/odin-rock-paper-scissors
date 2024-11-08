@@ -3,15 +3,29 @@
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors</title>
+        <style>
+            .container {
+                text-align: center;
+            }
+            .dropdown {
+                display:flex;
+                justify-content: center;
+                gap: 5px;
+            }
+        </style>
     </head>
     <body>
-        <p id="game-text">Hello! Let's play!</p>
-        <select name="choice" id="choice">
-            <option value="rock">Rock</option>
-            <option value="paper">Paper</option>
-            <option value="scissors">Scissors</option>
-        </select>
-        <button type="submit" onclick="play()">Shoot!</button>
+        <div class="container">
+            <p id="game-text">Hello! Let's play!</p>
+            <div class="dropdown">
+                <select name="choice" id="choice">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+                <button type="submit" onclick="play()">Shoot!</button>
+            </div>
+        </div>
     </body>
     <script src="rock-paper-scissors.js"></script>
 </html>
